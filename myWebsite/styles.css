@@ -54,18 +54,20 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
-  background-size: cover;
+  background-image: url('images/programming.png') no-repeat top center ;
+  background-size: contain;
+  background-color: rgba(255,255,255,0.6);
   overflow: hidden;
-  padding-top: 60px;
+  padding-top: 0px;
+  background-blend-mode: lighten
 }
 header {
   line-height: 1.5;
 }
 header .profile-image {
-  margin-top: 50px;
-  width: 150px;
-  height: 150px;
+  margin-top: 5px;
+  display: inline;
+  height: 75px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
@@ -75,14 +77,16 @@ header .profile-image:hover {
 }
 .tag {
   background-color: #efefef;
+  display: inline-block;
   color: black;
   padding: 10px;
   border-radius: 5px;
-  display: table;
+
   margin: 10px auto;
 }
 .location {
   background-color: #222;
+  display: inline-block;
   color: white;
 }
 .card {
@@ -175,7 +179,7 @@ a.social:hover {
   }
 
   header {
-    min-height: 450px;
+    min-height: 150px;
   }
 
   .nav {
