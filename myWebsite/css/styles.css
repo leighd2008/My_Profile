@@ -28,7 +28,7 @@ a:hover {
   background: black;
   min-height: 30px;
   padding: 10px;
-  position: fixed;
+  /*position: fixed;*/
   text-align: center;
 }
 .nav {
@@ -54,20 +54,38 @@ a:hover {
 
 header {
   text-align: center;
-  background-image: url('images/programming.png') no-repeat top center ;
-  background-size: contain;
-  background-color: rgba(255,255,255,0.6);
+  background: url('images/background.png') no-repeat top center ;
+  background-color: rgba(117,132,138,0.97);
+  background-blend-mode: lighten;
   overflow: hidden;
   padding-top: 0px;
-  background-blend-mode: lighten
+
 }
 header {
   line-height: 1.5;
 }
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+.profile-image {
+  grid-column: 2;
+  grid-row: 1 / 4;
+}
+.tag {
+  grid-column: 3 / 5;
+  grid-row: 2;
+}
+.profession {
+  grid-column: 5 / 7;
+  grid-row: 2;
+}
 header .profile-image {
-  margin-top: 5px;
-  display: inline;
-  height: 75px;
+  margin: 20px;
+  display: block;
+  height: 120px;
   border-radius: 50%;
   border: 3px solid white;
   transition: all .5s;
@@ -77,16 +95,15 @@ header .profile-image:hover {
 }
 .tag {
   background-color: #efefef;
-  display: inline-block;
+  display: block;
   color: black;
+  margin: 10px;
   padding: 10px;
   border-radius: 5px;
-
-  margin: 10px auto;
 }
-.location {
+.profession {
   background-color: #222;
-  display: inline-block;
+  display: block;
   color: white;
 }
 .card {

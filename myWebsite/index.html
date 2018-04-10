@@ -4,14 +4,18 @@
   <meta charset="utf-8">
   <title>Diane Leigh's Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/gallery.css">
+	<script src = "js/gallery.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
   <body>
 
     <header>
-      <img src="images\me.jpg" alt="Picture of Diane Leigh" class="profile-image">
-      <h1 class="tag name">Diane R Leigh</h1>
-      <p class="tag location">Data Scientist / Web Developer</p>
+      <div class="wrapper">
+        <img src="images\me.jpg" alt="Picture of Diane Leigh" class="profile-image">
+        <h1 class="tag name">Diane R Leigh</h1>
+        <p class="tag profession">Data Scientist / Web Developer</p>
+      </div>
     </header>
 
       <div class="main-nav">
@@ -27,26 +31,30 @@
       <div class="card">
         <h2 class="card-title">Background</h2>
         <ul>
-          <li>I’m an aspiring web designer who loves everything about the web. I've lived in lots of different places and have worked in lots of different jobs.</li>
-          <li> I’m excited to bring my life experience to the process of building fantastic looking websites.</li>
-          <li>I’ve been a professional cook and gardener and am a life-long learner who's always interested in expanding my skills.</li>
+          <li>I have a Master's degree in Physiology and have spent the last 30+ years working in basic science research.</li>
+          <li> In all my time as a researcher the most fun I ever had was programming for data analysis in MatLab</li>
+          <li>When my position was elimanated for the third time in five years due to budget cuts, I decided to change careers and delve into computer programing / data science</li>
+          <li>Since then I have been taking as many online classes as I could using <a href="https://www.coursera.org/user/eecc54e8685ad03a253996fc8cf2ed9f" target="_blank">Coursera</a> and <a href="https://teamtreehouse.com/dianeleigh" target="_blank">Treehouse</a></li>
+          <li>I have also spent some time on <a href="https://www.hackerrank.com/leighd2008" target="_blank">HackerRank</a></li>
           <li>To learn more, <a href="resume.html">view my resume.</a></li>
       </ul>
       <h3>A New Subsection</h3>
 
 
       </div>
-
+<!--"https://leighd2008.github.io/Music-Express-Party/index.html"-->
       <div class="card">
-        <h2 class="card-title">Goals</h2>
-        <p>I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
-        <ul class="skills">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Ruby</li>
-          <li>Rails</li>
-        </ul>
+        <h2 class="card-title">Websites</h2>
+        <div id = "image">
+          <p>These are some websites I have put together. Hover to show a larger image, click to visit the webpage.</p>
+        </div>
+          <img class = "preview" alt = "Children's Parties by Music Express" src ="images\Amber_website.png"
+           onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+        	<img class = "preview" alt = "Scott's website" src = "images\portland.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
+        	<img class = "preview" alt = "Robin's Website" src = "images\portland.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
+
         <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
       </div>
 
@@ -54,10 +62,10 @@
     <footer>
       <ul>
         <li><a href="http://twitter.com/treehouse" target="_blank" class="social twitter">Twitter</a></li>
-        <li><a href="#" class="social linkedin">LinkedIn</a></li>
-        <li><a href="#" class="social github">Github</a></li>
+        <li><a href="https://www.linkedin.com/in/diane-leigh-5251a275/" target="_blank" class="social linkedin">LinkedIn</a></li>
+        <li><a href="https://github.com/leighd2008/" target="_blank" class="social github">Github</a></li>
       </ul>
-      <p class="copyright">Copyright 2015, Jane Smith</p>
+      <p class="copyright">Copyright 2018, Diane Leigh</p>
     </footer>
   </body>
   </html>
