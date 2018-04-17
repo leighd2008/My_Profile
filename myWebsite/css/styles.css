@@ -59,6 +59,7 @@ header {
   background-blend-mode: lighten;
   overflow: hidden;
   padding-top: 0px;
+  position: fixed;
 
 }
 header {
@@ -107,8 +108,8 @@ header .profile-image:hover {
   color: white;
 }
 .card {
-  margin: 20px;
-  padding: 20px 40px 40px;
+  margin: 10px;
+  padding: 10px 20px 20px;
   max-width: 500px;
   text-align: left;
   background: #fff;
@@ -116,6 +117,20 @@ header .profile-image:hover {
   border-radius: 6px;
 }
 .card:hover {
+  border-color: #ff99ff;
+}
+
+.card_intro {
+  margin: 10px;
+  padding: 10px 10px 10px;
+  /*width: 90%*/
+  max-width: 1000px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+.card_intro:hover {
   border-color: #ff99ff;
 }
 
@@ -127,14 +142,14 @@ ul.skills {
 .skills li {
   border-radius: 6px;
   display: inline-block;
-  background: #ff9904;
+  background: #fff704;
   color: white;
   padding: 5px 10px;
   margin: 2px;
 }
 
 .skills li:nth-child(odd) {
-  background: #0399ff;
+  background: #a9ff99;
 }
 
 footer {
@@ -195,6 +210,13 @@ a.social:hover {
       margin: 0 auto;
   }
 
+  .top {
+      display: flex;
+      max-width: 1200px;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
   header {
     min-height: 150px;
   }
@@ -210,7 +232,7 @@ a.social:hover {
   }
 
   main {
-    padding-top: 50px;
+    padding-top: 200px;
   }
 
   main p {

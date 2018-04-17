@@ -5,19 +5,17 @@
   <title>Diane Leigh's Profile</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/gallery.css">
+  <link rel="stylesheet" href="css/websites.css">
 	<script src = "js/gallery.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
   <body>
 
     <header>
       <div class="wrapper">
-        <img src="images\me.jpg" alt="Picture of Diane Leigh" class="profile-image">
+        <img src="images/me.jpg" alt="Picture of Diane Leigh" class="profile-image">
         <h1 class="tag name">Diane R Leigh</h1>
-        <p class="tag profession">Data Scientist / Web Developer</p>
+        <p class="tag profession">Data Scientist / Website Design / Developer</p>
       </div>
-    </header>
-
       <div class="main-nav">
           <ul class="nav">
             <li><a href="#">Home</a></li>
@@ -26,42 +24,61 @@
             <li><a href="#">Contact</a></li>
           </ul>
       </div>
-
-    <main class="flex">
-      <div class="card">
-        <h2 class="card-title">Background</h2>
-        <ul>
-          <li>I have a Master's degree in Physiology and have spent the last 30+ years working in basic science research.</li>
-          <li> In all my time as a researcher the most fun I ever had was programming for data analysis in MatLab</li>
-          <li>When my position was elimanated for the third time in five years due to budget cuts, I decided to change careers and delve into computer programing / data science</li>
-          <li>Since then I have been taking as many online classes as I could using <a href="https://www.coursera.org/user/eecc54e8685ad03a253996fc8cf2ed9f" target="_blank">Coursera</a> and <a href="https://teamtreehouse.com/dianeleigh" target="_blank">Treehouse</a></li>
-          <li>I have also spent some time on <a href="https://www.hackerrank.com/leighd2008" target="_blank">HackerRank</a></li>
-          <li>To learn more, <a href="resume.html">view my resume.</a></li>
-      </ul>
-      <h3>A New Subsection</h3>
+    </header>
 
 
-      </div>
-<!--"https://leighd2008.github.io/Music-Express-Party/index.html"-->
-      <div class="card">
-        <h2 class="card-title">Websites</h2>
-        <div id = "image">
-          <p>These are some websites I have put together. Hover to show a larger image, click to visit the webpage.</p>
+    <main>
+      <section class="top">
+          <div class="card_intro">
+            <h2 class="card-title">Introduction</h2>
+            <ul>
+              <li>I have a Master's degree in Physiology and have spent the last 30+ years working in basic science research.</li>
+              <li> In all my time as a researcher the most fun I ever had was programming for data analysis in MatLab</li>
+              <li>When my position was elimanated for the third time in five years due to budget cuts, I decided to change careers and delve into computer programing / data science</li>
+              <li>Since then I have been taking as many online classes as I could using <a href="https://www.coursera.org/user/eecc54e8685ad03a253996fc8cf2ed9f" target="_blank">Coursera</a> and <a href="https://teamtreehouse.com/dianeleigh" target="_blank">Treehouse</a></li>
+              <li>I have also spent some time on <a href="https://www.hackerrank.com/leighd2008" target="_blank">HackerRank</a></li>
+              <li>To learn more, <a href="resume.html">view my resume.</a></li>
+            </ul>
+          </div>
+      </section>
+
+      <section class="flex">
+          <div class="card">
+            <h2 class="card-title">Data Science Projects</h2>
+            <p>These are some of the data projects I have completed during my course work.</p>
+            <ul class="skills">
+              <li><a href="https://leighd2008.github.io/Data_Science_Capstone" target="_blank">Data Science Capstone </a></li>
+              <li><a href="https://leighd2008.github.io/Music-Express-Party/index.html" target="_blank">Excel to MySQL Capstone </a></li>
+              <li><a href="https://leighd2008.github.io/https://github.com/leighd2008/DDP-Week4-Shiny-Application" target="_blank">Shiny app and presentation</a></li>
+              <li><a href="https://leighd2008.github.io/practicalmachinelearning/" target="_blank">Practical machine learning </a></li>
+              <li><a href="https://leighd2008.github.io/Music-Express-Party/index.html" target="_blank">RestAPI </a></li>
+              <li><a href="https://leighd2008.github.io/Music-Express-Party/index.html" target="_blank">Flashcards </a></li>
+              <li><a href="https://leighd2008.github.io/Music-Express-Party/index.html" target="_blank">Flask Social </a></li>
+              <li><a href="https://leighd2008.github.io/tacocat" target="_blank">TACOCAT </a></li>
+
+            </ul>
+            <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+          <h3>A New Subsection</h3>
+
+
+          </div>
+
+        <div class="card">
+          <h2 class="card-title">Websites</h2>
+          <ul>
+            <li class="website"><img class = "preview" alt = "Children's Parties by Music Express" src ="images/Amber_website.png">
+              <p class="description"><a href="https://leighd2008.github.io/Music-Express-Party/index.html" target="_blank">Children's Parties by Music Express</a></p>
+            </li>
+            <li class="website"><img class = "preview" alt = "Scott's website" src = "images/portland.jpg" >
+              <p class="description">Scott's website</p>
+           </li>
+           <li class="website"><img class = "preview" alt = "Robin's Website" src = "images/portland.jpg">
+             <p class="description">Robin's Website</p>
+           </li>
+         </ul>
         </div>
-        <div id = "img-caption">
-          
-        </div>
-        <p></p>
-          <img class = "preview" alt = "Children's Parties by Music Express" src ="images\Amber_website.png"
-           onmouseover = "upDate(this)" onmouseout = "unDo()">
 
-        	<img class = "preview" alt = "Scott's website" src = "images\portland.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-        	<img class = "preview" alt = "Robin's Website" src = "images\portland.jpg" onmouseover = "upDate(this)" onmouseout = "unDo()">
-
-        <!--<p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>-->
-      </div>
-
+      </section>
     </main>
     <footer>
       <ul>
