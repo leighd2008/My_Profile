@@ -15,13 +15,15 @@ body {
 
 a {
   text-decoration: none;
-  color: #0499ff;
+  color: #060606;
 }
 a:hover {
   color: #6633ff;
 }
 
 /* Section Styles */
+
+/* Header */
 
 .main-nav {
   width: 100%;
@@ -107,20 +109,20 @@ header .profile-image:hover {
   display: block;
   color: white;
 }
+
+/* Body */
+
 .card {
   margin: 10px;
   padding: 10px 20px 20px;
-  max-width: 500px;
+  max-width: 100%;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
 }
-.card:hover {
-  border-color: #ff99ff;
-}
 
-.card_intro {
+.card_intro, .card_websites {
   margin: 10px;
   padding: 10px 10px 10px;
   /*width: 90%*/
@@ -130,14 +132,23 @@ header .profile-image:hover {
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
 }
-.card_intro:hover {
+.card, .card_intro, .card_websites:hover {
   border-color: #ff99ff;
 }
 
-ul.skills {
+ul.skills, .web {
   padding: 0;
   text-align: center;
 }
+
+.web li {
+  border-radius: 6px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 2px;
+  width: 200px
+}
+
 
 .skills li {
   border-radius: 6px;
@@ -158,7 +169,7 @@ footer {
   padding: 20px 0 40px 20px;
 }
 
-footer .copyright {
+footer .copyright, footer .footnote {
   top: -8px;
   margin-right: 20px;
   font-size: .75em;
@@ -210,7 +221,7 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  .top {
+  .top, .middle {
       display: flex;
       max-width: 1200px;
       justify-content: space-around;
@@ -250,6 +261,7 @@ a.social:hover {
 h3 {
   color: maroon;
   letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .card-title {
