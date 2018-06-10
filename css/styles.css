@@ -15,10 +15,10 @@ body {
 
 a {
   text-decoration: none;
-  color: #060606;
+  color: black;
 }
 a:hover {
-  color: #6633ff;
+  color: #ff99ff;
 }
 
 /* Section Styles */
@@ -49,9 +49,10 @@ a:hover {
 }
 .nav a {
   transition: all .5s;
+  color: white;
 }
 .nav a:hover {
-  color: white
+  color: #ff99ff;
 }
 
 header {
@@ -132,7 +133,7 @@ header .profile-image:hover {
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
 }
-.card, .card_intro, .card_websites:hover {
+.card:hover, .card_intro:hover, .card_websites:hover {
   border-color: #ff99ff;
 }
 
