@@ -65,6 +65,7 @@ a:hover {
 }
 
 header {
+  z-index: 1500 !important;
   text-align: center;
   background: url('../images/background.png') no-repeat top center ;
   background-color: rgba(117,132,138,0.97);
@@ -126,7 +127,7 @@ header .profile-image:hover {
 /* Body */
 
 .card {
-  margin: 0% 0% 0% 0%;
+  margin: 5% 5% 0% 5%;
   padding: 10px 20px 10px;
   max-width: 90%;
   text-align: left;
@@ -137,7 +138,7 @@ header .profile-image:hover {
 }
 
 .card_intro, .card_websites {
-  margin: 0% 0% 0% 0%;
+  margin: 5% 5% 0% 5%;
   padding: 10px 20px 10px;
   /*width: 90%*/
   max-width: 90%;
@@ -173,18 +174,31 @@ ul.skills, .web {
 }
 
 .skills li:nth-child(odd) {
-  background: #ff99ff;
+  background: #6d4c9e;
 
+}
+
+.skills li:nth-child(odd) a {
+  color: white;
+}
+
+.skills li:nth-child(even) a:hover {
+  color: #6d4c9e;
+}
+
+.skills li:nth-child(odd) a:hover {
+  color: #6d4c9e;
 }
 
 footer {
+  position: sticky;
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  padding:  0 ;
 }
 
 footer .copyright, footer .footnote {
-  top: -8px;
+  top: -10px;
   margin-right: 20px;
   font-size: .75em;
 }
@@ -267,7 +281,7 @@ a.social:hover {
   footer {
     font-size: 1.3em;
     /* max-width: 1200px; */
-    margin: 20px;
+    margin: 0px 0px 20px 0px;
   }
 
 }
@@ -284,5 +298,5 @@ h3 {
   border: solid black 3px;
   border-radius: 10px;
   margin-top: 50px;
-  width: 90%
+  width: 100%
 }
