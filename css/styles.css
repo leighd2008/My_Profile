@@ -18,7 +18,7 @@ body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #6d4c9e;
+  background: #e8e0e0;
 }
 /* Link Styles */
 
@@ -97,7 +97,7 @@ header {
   grid-column: 5 / 7;
   grid-row: 2;
 }
-header .profile-image {
+.profile-image {
   margin: 20px;
   display: block;
   height: 120px;
@@ -105,7 +105,7 @@ header .profile-image {
   border: 3px solid white;
   transition: all .5s;
 }
-header .profile-image:hover {
+.profile-image:hover {
   transform: scale(1.2) rotate(360deg);
 }
 .tag {
@@ -223,14 +223,14 @@ a.social {
   opacity: .5;
   transition: all .25s;
 }
-a.twitter {
-  background-image: url(../images/twitter.svg);
+a.udemy {
+  background-image: url(../images/udemy-1-logo-svg-vector.svg);
 }
 a.linkedin {
-  background-image: url(../images/linkedin.svg);
+  background-image: url(../images/Linkedin-03.svg);
 }
 a.github {
-  background-image: url(../images/github.svg);
+  background-image: url(../images/GitHub-Mark-64px.png);
 }
 a.social:hover {
   opacity: 1;
