@@ -81,7 +81,7 @@ header {
   display: block;
   color: black;
   margin: 2% 2% 10% 2%;
-  padding: 14%;
+  padding: 14% 0%;
   border-radius: 5px;
 }
 .profession {
@@ -89,10 +89,10 @@ header {
   display: block;
   color: white;
   margin: 2% 2% 10% 2%;
-  padding: 8%;
-  text-align: center;
-  vertical-align: middle;
+  padding: 8% 0;
+
 }
+
 
 .main-nav {
   width: 100%;
@@ -136,7 +136,7 @@ main p {
 }
 
 .card {
-  margin: 5% 5% 0% 5%;
+  margin: 10% 5% 0% 5%;
   padding: 10px 20px 10px;
   max-width: 90%;
   text-align: left;
@@ -154,7 +154,7 @@ main p {
 } */
 
 .card_intro, .card_websites {
-  margin: 5% 5% 0% 5%;
+  margin: 10% 5% 0% 5%;
   padding: 10px 20px 10px;
   /*width: 90%*/
   max-width: 90%;
@@ -175,7 +175,7 @@ h3 {
   text-align: center;
   border: solid black 3px;
   border-radius: 10px;
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%
 }
 
@@ -314,7 +314,7 @@ a.social:hover {
     display: block;
     color: black;
     margin: 2%;
-    padding: 4%;
+    /* padding: 4%; */
     border-radius: 5px;
   }
   .profession {
@@ -322,10 +322,7 @@ a.social:hover {
     display: block;
     color: white;
     margin: 2%;
-    padding: 4%;
-    text-align: center;
-    vertical-align: middle;
-
+    padding: 14% 0;
   }
 
   .flex {
