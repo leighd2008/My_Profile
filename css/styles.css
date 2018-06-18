@@ -32,13 +32,73 @@ a:hover {
 
 /* Section Styles */
 
+/* Body */
+
 /* Header */
+
+header {
+  z-index: 1500 !important;
+  text-align: center;
+  background: url('../images/background.png') no-repeat top center ;
+  background-color: rgba(117,132,138,0.97);
+  background-blend-mode: lighten;
+  overflow: hidden;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+header {
+  line-height: 1.25;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 10px;
+}
+
+.tag {
+  grid-column: 2 / 6;
+  grid-row: 2;
+}
+.profession {
+  grid-column: 7 / 11;
+  grid-row: 2;
+}
+.profile-image {
+  margin: 20px;
+  display: none;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+
+.tag {
+  background-color: #efefef;
+  display: block;
+  color: black;
+  margin: 2% 2% 10% 2%;
+  padding: 14%;
+  border-radius: 5px;
+}
+.profession {
+  background-color: #222;
+  display: block;
+  color: white;
+  margin: 2% 2% 10% 2%;
+  padding: 8%;
+  text-align: center;
+  vertical-align: middle;
+}
 
 .main-nav {
   width: 100%;
   background: black;
   min-height: 30px;
-  padding: 10px;
+  padding: 0px;
   /*position: fixed;*/
   text-align: center;
 }
@@ -64,67 +124,16 @@ a:hover {
   color: #ff99ff;
 }
 
-header {
-  z-index: 1500 !important;
-  text-align: center;
-  background: url('../images/background.png') no-repeat top center ;
-  background-color: rgba(117,132,138,0.97);
-  background-blend-mode: lighten;
-  overflow: hidden;
-  padding-top: 0px;
-  position: fixed;
-  width: 100%;
 
-}
-header {
-  line-height: 1.5;
+/* Main */
+
+main {
+  padding-top: 175px;
 }
 
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 10px;
+main p {
+  line-height: 1em;
 }
-.profile-image {
-  grid-column: 2;
-  grid-row: 1 / 4;
-}
-.tag {
-  grid-column: 3 / 5;
-  grid-row: 2;
-}
-.profession {
-  grid-column: 5 / 7;
-  grid-row: 2;
-}
-.profile-image {
-  margin: 20px;
-  display: block;
-  height: 120px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
-}
-.profile-image:hover {
-  transform: scale(1.2) rotate(360deg);
-}
-.tag {
-  background-color: #efefef;
-  display: block;
-  color: black;
-  margin: 2%;
-  padding: 4%px;
-  border-radius: 5px;
-}
-.profession {
-  background-color: #222;
-  display: block;
-  color: white;
-  margin: 2%;
-  padding: 4%px;
-}
-
-/* Body */
 
 .card {
   margin: 5% 5% 0% 5%;
@@ -137,6 +146,13 @@ header {
 
 }
 
+/* .top, .middle {
+    display: flex;
+    /* max-width: 1200px; */
+    /* justify-content: space-around;
+    margin: 5% 5% 0% 5%;
+} */
+
 .card_intro, .card_websites {
   margin: 5% 5% 0% 5%;
   padding: 10px 20px 10px;
@@ -147,6 +163,22 @@ header {
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
 }
+
+h3 {
+  color: maroon;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+
+.card-title {
+  text-align: center;
+  border: solid black 3px;
+  border-radius: 10px;
+  margin-top: 50px;
+  width: 100%
+}
+
 .card:hover, .card_intro:hover, .card_websites:hover {
   border-color: #ff99ff;
 }
@@ -195,6 +227,7 @@ footer {
   width: 100%;
   min-height: 30px;
   padding:  0 ;
+  margin: 0px 0px 20px 0px;
 }
 
 footer .copyright, footer .footnote {
@@ -239,8 +272,61 @@ a.social:hover {
   clear: both;
 }
 
+
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
+
+  header {
+    line-height: 1.5;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+  }
+  .profile-image {
+    grid-column: 2;
+    grid-row: 1 / 4;
+  }
+  .tag {
+    grid-column: 3 / 5;
+    grid-row: 2;
+  }
+  .profession {
+    grid-column: 5 / 7;
+    grid-row: 2;
+  }
+  .profile-image {
+    margin: 20px;
+    display: block;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    transition: all .5s;
+  }
+  .profile-image:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
+  .tag {
+    background-color: #efefef;
+    display: block;
+    color: black;
+    margin: 2%;
+    padding: 4%;
+    border-radius: 5px;
+  }
+  .profession {
+    background-color: #222;
+    display: block;
+    color: white;
+    margin: 2%;
+    padding: 4%;
+    text-align: center;
+    vertical-align: middle;
+
+  }
 
   .flex {
       display: flex;
@@ -271,7 +357,7 @@ a.social:hover {
   }
 
   main {
-    padding-top: 200px;
+    padding-top: 150px;
   }
 
   main p {
@@ -284,19 +370,4 @@ a.social:hover {
     margin: 0px 0px 20px 0px;
   }
 
-}
-
-h3 {
-  color: maroon;
-  letter-spacing: 0.5px;
-  text-align: center;
-}
-
-
-.card-title {
-  text-align: center;
-  border: solid black 3px;
-  border-radius: 10px;
-  margin-top: 50px;
-  width: 100%
 }
