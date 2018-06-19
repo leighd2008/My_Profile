@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  vertical-align: middle;
   font-family: 'Roboto', sans-serif;
   color: #222;
   background: rgba(117, 132, 138, 0.63);
@@ -38,7 +39,6 @@ a:hover {
 
 header {
   z-index: 1500 !important;
-  text-align: center;
   background: url('../images/background.png') no-repeat top center ;
   background-color: rgba(117,132,138,0.97);
   background-blend-mode: lighten;
@@ -46,11 +46,12 @@ header {
   padding: 0;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 100%;
-}
+  max-width: 1250px;
 
-header {
-  line-height: 1.25;
 }
 
 .wrapper {
@@ -99,7 +100,6 @@ header {
   background: black;
   min-height: 30px;
   padding: 0px;
-  /*position: fixed;*/
   text-align: center;
 }
 .nav {
@@ -126,19 +126,15 @@ header {
 
 
 /* Main */
-
-main {
-  padding-top: 175px;
-}
-
 main p {
   line-height: 1em;
 }
 
-.card {
-  margin: 10% 5% 0% 5%;
+.middle, .card_websites {
+  margin: 5% 5% 5% 5%;
   padding: 10px 20px 10px;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1250px;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -146,18 +142,43 @@ main p {
 
 }
 
-/* .top, .middle {
-    display: flex;
-    /* max-width: 1200px; */
-    /* justify-content: space-around;
-    margin: 5% 5% 0% 5%;
-} */
-
-.card_intro, .card_websites {
-  margin: 10% 5% 0% 5%;
+.flex {
+  margin: 5% 5% 0% 5%;
   padding: 10px 20px 10px;
-  /*width: 90%*/
-  max-width: 90%;
+  max-width: 1250px;
+  text-align: left;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+
+}
+
+.card {
+  margin: 0% 2.5% 0% 2.5%;
+  padding: 10px 20px 10px;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+
+}
+
+.card_intro {
+  margin: 250px 5% 0% 5%;
+  padding: 10px 20px 10px;
+  width: 90%;
+  max-width: 1250px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+}
+
+.card_resume {
+  margin: 250px 5% 0% 5%;
+  padding: 10px 20px 10px;
+  width: 90%;
   text-align: left;
   background: #fff;
   border-bottom: 4px solid #ccc;
@@ -196,6 +217,9 @@ ul.skills, .web {
   width: 200px
 }
 
+.publications li {
+  margin: 0 0 10px 0
+}
 
 .skills li {
   border-radius: 6px;
@@ -278,7 +302,7 @@ a.social:hover {
 @media screen and (min-width: 720px) {
 
   header {
-    line-height: 1.5;
+    line-height: 1;
   }
 
   .wrapper {
@@ -314,47 +338,47 @@ a.social:hover {
     display: block;
     color: black;
     margin: 2%;
-    /* padding: 4%; */
     border-radius: 5px;
+    padding: 2% 1%;
   }
   .profession {
     background-color: #222;
     display: block;
     color: white;
     margin: 2%;
-    padding: 14% 0;
+    padding: 2% 1%;
+
+  }
+  header {
+    max-height: 230px;
+    max-width: 1250px;
   }
 
   .flex {
       display: flex;
-      /* max-width: 1200px; */
+      width: 90%
+      max-width: 1250px;
       justify-content: space-around;
-      margin: 0 auto;
+      margin: 20px auto;
   }
 
   .top, .middle {
       display: flex;
-      /* max-width: 1200px; */
+      width: 90%
+      max-width: 1250px;
       justify-content: space-around;
-      margin: 0 auto;
+      margin: 20px auto;
   }
 
-  header {
-    min-height: 150px;
-  }
-
-  .nav {
-    /* max-width: 1200px; */
-  }
-
-  .nav .name {
-    display: block;
-    margin-right: auto;
-    color: white;
-  }
-
-  main {
-    padding-top: 150px;
+  .card_intro {
+    margin: 200px 5% 0% 5%;
+    padding: 10px 20px 10px;
+    width: 90%;
+    max-width: 1250px;
+    text-align: left;
+    background: #fff;
+    border-bottom: 4px solid #ccc;
+    border-radius: 6px;
   }
 
   main p {
@@ -363,8 +387,11 @@ a.social:hover {
 
   footer {
     font-size: 1.3em;
-    /* max-width: 1200px; */
-    margin: 0px 0px 20px 0px;
+    max-width: 1250px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 
 }
