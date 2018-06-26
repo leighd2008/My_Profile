@@ -243,7 +243,7 @@ ul.skills, .web {
 }
 
 .skills li:nth-child(odd) a:hover {
-  color: #6d4c9e;
+  color: #ff99ff;
 }
 
 footer {
