@@ -120,7 +120,7 @@ header {
   transition: all .5s;
   color: white;
 }
-.nav a:hover {
+.nav a:hover, li.active a {
   color: #ff99ff;
 }
 
@@ -130,7 +130,7 @@ main p {
   line-height: 1em;
 }
 
-.middle, .card_websites {
+.middle, .card_websites, .card_skills {
   margin: 5% 5% 5% 5%;
   padding: 10px 20px 10px;
   width: 90%;
@@ -194,8 +194,8 @@ h3 {
 
 .card-title {
   text-align: center;
-  border: solid black 3px;
-  border-radius: 10px;
+  /* border: solid black 3px;
+  border-radius: 10px; */
   margin-top: 30px;
   width: 100%
 }
@@ -234,7 +234,7 @@ ul.skills, .web {
 
 }
 
-.skills li:nth-child(odd) a {
+.skills li:nth-child(odd) a, .skills li:nth-child(odd) {
   color: white;
 }
 
