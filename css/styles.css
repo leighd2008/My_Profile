@@ -191,6 +191,12 @@ h3 {
   text-align: center;
 }
 
+h2 {
+  letter-spacing: 0.5px;
+  text-align: center;
+  font-size: bold;
+}
+
 
 .card-title {
   text-align: center;
