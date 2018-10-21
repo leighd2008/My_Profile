@@ -23,3 +23,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2px;
 }
+
+.OSDP{
+  width:20%;
+  border: 2px solid black;
+}
