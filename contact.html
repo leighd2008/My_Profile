@@ -1,103 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Diane Leigh's Profile</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/websites.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/websites.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <div class="wrap">
       <header>
         <div class="wrapper">
-          <img src="images/me.jpg" alt="Picture of Diane Leigh" class="profile-image">
+          <img
+            src="images/me.jpg"
+            alt="Picture of Diane Leigh"
+            class="profile-image"
+          />
           <h1 class="tag name">Diane R. Leigh</h1>
-          <h2 class="tag profession">Developer / Website Design / Data Scientist</h2>
+          <h2 class="tag profession">
+            Developer / Website Design / Data Scientist
+          </h2>
         </div>
         <div class="main-nav">
-            <ul class="nav">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="research.html">Research</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li class="active"><a href="contact.html">Contact</a></li>
-            </ul>
+          <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
       </header>
     </div>
 
     <main>
       <section class="top">
-          <div class="card_intro">
-            <h2 class="card-title">Contact Information</h2>
-              <p>Please contact me to discuss your job opportunity or freelance project!<br>
-                <br>
-                Email: leighd2008@gmail.com<br>
-                <br>
-                Phone (call or text): 330-307-7570<br>
-              </p>
-              <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"  action="https://script.google.com/macros/s/AKfycbxU79zQsAHQHBJhnX0jSfiOPYY6AUng1gFe76_v/exec">
-                <fieldset class="pure-group">
-                  <label for="name">Name: </label>
-                  <input id="name" name="name" placeholder="What your Mom calls you" />
-                </fieldset>
+        <div class="card_intro">
+          <h2 class="card-title">Contact Information</h2>
+          <p>
+            Please contact me to discuss your job opportunity or freelance
+            project!<br />
+            <br />
+            Email: leighd2008@gmail.com<br />
+            <br />
+            Phone (call or text): 330-307-7570<br />
+          </p>
+          <form
+            id="gform"
+            method="POST"
+            class="pure-form pure-form-stacked"
+            data-email="example@email.net"
+            action="https://script.google.com/macros/s/AKfycbxU79zQsAHQHBJhnX0jSfiOPYY6AUng1gFe76_v/exec"
+          >
+            <fieldset class="pure-group">
+              <label for="name">Name: </label>
+              <input
+                id="name"
+                name="name"
+                placeholder="What your Mom calls you"
+              />
+            </fieldset>
 
-                <fieldset class="pure-group">
-                  <label for="email"><em>Your</em> Email Address:</label>
-                  <input id="email" name="email" type="email" value=""
-                  required placeholder="your.name@email.com"/>
-                  <span id="email-invalid" style="display:none">
-                    Must be a valid email address</span>
-                  </fieldset>
+            <fieldset class="pure-group">
+              <label for="email"><em>Your</em> Email Address:</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                value=""
+                required
+                placeholder="your.name@email.com"
+              />
+              <span id="email-invalid" style="display:none">
+                Must be a valid email address</span
+              >
+            </fieldset>
 
-                  <fieldset class="pure-group">
-                    <label for="phone">Phone Number: </label>
-                    <input id="phone" name="phone" placeholder="Optional" />
-                  </fieldset>
+            <fieldset class="pure-group">
+              <label for="phone">Phone Number: </label>
+              <input id="phone" name="phone" placeholder="Optional" />
+            </fieldset>
 
-                  <fieldset class="pure-group">
-                    <label for="message">Message: </label>
-                    <textarea id="message" name="message" rows="10"
-                    placeholder="I am excited to hear about your project!"  style="margin: 2%; width: 96%;"></textarea>
-                  </fieldset>
+            <fieldset class="pure-group">
+              <label for="message">Message: </label>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                placeholder="I am excited to hear about your project!"
+                style="margin: 2%; width: 96%;"
+              ></textarea>
+            </fieldset>
 
+            <button class="button-success pure-button button-xlarge">
+              <i class="fa fa-paper-plane"></i>&nbsp;Send
+            </button>
+          </form>
 
-                  <button class="button-success pure-button button-xlarge">
-                    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-
-                  </form>
-
-                  <!-- Customise the Thankyou Message People See when they submit the form: -->
-                  <div style="display:none;" id="thankyou_message">
-                    <h2><em>Thanks</em> for contacting us!
-                      I will get back to you soon!</h2>
-                    </div>
-
-                    <!-- Submit the Form to Google Using "AJAX" -->
-                    <script data-cfasync="false"
-                    src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
-                    <!-- <script data-cfasync="false" type="text/javascript"
-                    src="/form-submission-handler.js"></script> -->
-                    <!-- END -->
-
+          <!-- Customise the Thankyou Message People See when they submit the form: -->
+          <div style="display:none;" id="thankyou_message">
+            <h2>
+              <em>Thanks</em> for contacting us! I will get back to you soon!
+            </h2>
           </div>
-      </section>
 
+          <!-- Submit the Form to Google Using "AJAX" -->
+          <script
+            data-cfasync="false"
+            src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"
+          ></script>
+          <!-- <script data-cfasync="false" type="text/javascript"
+                    src="/form-submission-handler.js"></script> -->
+          <!-- END -->
+        </div>
+      </section>
     </main>
     <footer>
-      <br/>
+      <br />
       <ul>
-        <li><a href="https://www.udemy.com/user/diane-leigh/" target="_blank" class="social udemy">Udemy</a></li>
-        <li><a href="https://www.linkedin.com/in/diane-leigh-5251a275/" target="_blank" class="social linkedin">LinkedIn</a></li>
-        <li><a href="https://github.com/leighd2008/" target="_blank" class="social github">Github</a></li>
+        <li>
+          <a
+            href="https://www.udemy.com/user/diane-leigh/"
+            target="_blank"
+            class="social udemy"
+            >Udemy</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/diane-leigh-5251a275/"
+            target="_blank"
+            class="social linkedin"
+            >LinkedIn</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://github.com/leighd2008/"
+            target="_blank"
+            class="social github"
+            >Github</a
+          >
+        </li>
       </ul>
-      <br/>
+      <br />
       <p class="copyright">Copyright 2018, Diane Leigh</p>
-      <br/>
+      <br />
     </footer>
   </body>
-  </html>
+</html>
